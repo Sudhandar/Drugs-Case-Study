@@ -119,7 +119,7 @@ After training the model using the above mentioned parameters, the following are
 
 ### ROC AUC Curve
 
-[!alt text](https://github.com/Sudhandar/Drugs-Case-Study/blob/master/images/roc_auc.png)
+![alt text](https://github.com/Sudhandar/Drugs-Case-Study/blob/master/images/roc_auc.png)
 
 The Random Forest model has an AUC score of **0.90** and f1 score of **0.83** on the test set.
 
