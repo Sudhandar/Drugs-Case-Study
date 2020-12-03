@@ -3,6 +3,8 @@
 One of the challenge for all Pharmaceutical companies is to understand the persistency of drug as per the physician prescription. 
 With an objective to gather insights on the factors that are impacting the persistency, I have build a classification model predicting the persisitency of drugs for the given dataset. 
 
+Link to view the notebook: [Github View](https://github.com/Sudhandar/Drugs-Case-Study/blob/master/notebooks/drugs_persistency_case_study.ipynb)
+
 ## Dataset Desription:
 
 | Bucket                   | Variable                            | Variable Description                                                                                                                                                                     |
@@ -47,6 +49,8 @@ The individual columns were grouped into their respective buckets, converted to 
 
 The four columns (change risk segment, risk segment during rx, tscore bucket during rx, change tscore) with many unknown values were removed.
 
+![alt text](https://github.com/Sudhandar/Drugs-Case-Study/blob/master/images/null_values.png)
+
 ### Feature Selection:
 
 Mutual Information Classifier was used to rank features based on their relevancy scores and the top 7 features were considered.
@@ -85,7 +89,7 @@ A 70-30 split for training and testing sets were used.
 
 ## Model Selection and Fine Tuning:
 
-The data was trained separately on five different models and each model was evaluated using k-fold cross validation score and the model with the highest mean ROC AUC value was chosen.
+The data was trained separately on five different models and each model was evaluated using k-fold cross validation score and the Random Forest model was chosen since it has the highest mean ROC AUC value.
 
 | Model                    | Train AUC |
 | ------------------------ | --------- |
@@ -115,6 +119,7 @@ After training the model using the above mentioned parameters, the following are
 
 ### ROC AUC Curve
 
+[!alt text](https://github.com/Sudhandar/Drugs-Case-Study/blob/master/images/roc_auc.png)
 
 The Random Forest model has an AUC score of **0.90** and f1 score of **0.83** on the test set.
 
